@@ -1,0 +1,441 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+	font-family: 'Conv_ApexNew-Book';
+	src: url('../fonts/ApexNew-Book.eot');
+	src: local('☺'), url('../fonts/ApexNew-Book.woff') format('woff'), url('../fonts/ApexNew-Book.ttf') format('truetype'), url('../fonts/ApexNew-Book.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Conv_ApexNew-Heavy';
+	src: url('../fonts/ApexNew-Heavy.eot');
+	src: local('☺'), url('../fonts/ApexNew-Heavy.woff') format('woff'), url('../fonts/ApexNew-Heavy.ttf') format('truetype'), url('../fonts/ApexNew-Heavy.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Conv_ApexNew-Light';
+	src: url('../fonts/ApexNew-Light.eot');
+	src: local('☺'), url('../fonts/ApexNew-Light.woff') format('woff'), url('../fonts/ApexNew-Light.ttf') format('truetype'), url('../fonts/ApexNew-Light.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Conv_ApexNew-Medium';
+	src: url('../fonts/ApexNew-Medium.eot');
+	src: local('☺'), url('../fonts/ApexNew-Medium.woff') format('woff'), url('../fonts/ApexNew-Medium.ttf') format('truetype'), url('../fonts/ApexNew-Medium.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+body{margin:0px; padding:0px; text-align:left; font-family: 'Conv_ApexNew-Light'; }
+
+.orta{width:100%;}
+.ust{width:100%;}
+.icerik{width:80%; clear:both;}
+.logo{display:block; margin-top:35px; float:left;}
+.czg{float:left; margin-top:25px; margin-left:20px; display:block;}
+.logo-x{float:left; margin-top:35px; margin-left:20px; display:block;}
+.lnklnd{float:right; margin-top:55px; transition: all 0.3s ease;}
+.lnklnd:hover{opacity:0.6;}
+.dil{float:right; margin-top:55px; margin-left:15px; transition: all 0.3s ease;}
+.dil:hover{opacity:0.6;}
+
+
+
+.nav a{
+  text-decoration:none;
+}
+.nav{
+  height:40px;
+  background:#3f8d50;
+  position:relative;
+  
+}
+.nav>ul{
+  position:relative;
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+.nav>ul>li>ul{
+  position:absolute;
+  left:0;
+  padding:0;
+  margin:0;
+  list-style:none;
+  z-index:10;
+}
+.nav>ul>li:hover>ul li a{
+  opacity:1;
+  height:50px;
+   transition:all .3s linear;
+  -o-transition:all .3s linear;
+  -moz-transition:all .3s linear;
+  -webkit-transition:all .3s linear;
+}
+.nav>ul>li>ul a{
+  display:block;
+  color:#222;
+  width:200px;
+  line-height:50px !important;
+  background:#eee;
+  border-bottom:1px solid #ddd;
+  text-align:center;
+  padding:0 5px;
+   height:0;
+  overflow:hidden;
+  opacity:0;
+    transition:all .3s linear .2s;
+  -o-transition:all .3s linear .2s;
+  -moz-transition:all .3s linear .2s;
+  -webkit-transition:all .3s linear .2s;
+  font-size:12px;
+}
+.nav>ul>li{
+  float:left;
+  position:relative;
+}
+.nav>ul>li>a{
+  padding:0 18px;
+  color:#fff;
+  display:block;
+  line-height:40px !important;
+  text-decoration:none;
+  font-size:14px;
+}
+.lamp span{
+  display:block;
+  height:4px;
+  background:#ccc;
+  position: relative;
+}
+.lamp span:after {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(238, 102, 102, 0);
+	border-bottom-color: #ccc;
+	border-width: 4px;
+	margin-left: -4px;
+}
+.lamp{
+  position:absolute !important;
+  height:4px;
+  top:36px;
+  background:#333;
+  transition:all .3s linear;
+  -o-transition:all .3s linear;
+  -moz-transition:all .3s linear;
+  -webkit-transition:all .3s linear;
+}
+.selected.active>a,.active>a{
+  transition:all .3s linear;
+  -o-transition:all .3s linear;
+  -moz-transition:all .3s linear;
+  -webkit-transition:all .3s linear;
+  color:#fff;
+}
+
+
+
+.orta-bg{position:relative;}
+.orta-bg .full-width{width:100%;}
+.mac{float:left; width:30%;}
+.mac-2{float:left; margin-left:15%; margin-top:5%;}
+.mac-text{float:left; margin-top:5%; margin-left:0.7%;  font-size:13px; font-family: 'Conv_ApexNew-Book'; color:#68a873; text-align:left;}
+.mac-3{float:right; margin-top:1.8%; width:22%;}
+
+
+.mac-number {
+  margin: 0 auto;
+  z-index: 55;
+}
+.mac-number li {
+ 
+  display: inline-block;
+  margin: 4px 0px;
+  z-index: 56;
+  vertical-align: top;
+}
+.mac-number li .infinity img {
+  padding: 0px;
+}
+.mac-number li .number {
+  margin-bottom: 5px;
+  display: block;
+  color: #68a873;
+  font-size: 21px;
+  font-family: 'Conv_ApexNew-Medium'
+}
+
+
+.menu-title{width:100%; position:absolute; top:0px; height:40px; line-height:40px; color:#3f8d50; z-index:9; background:#fff;}
+.menu-title .icerik h3{text-align:left; font-weight:normal; margin-left:22%;}
+.arrow{position: absolute; top: 40px; left: 30%; z-index:12;}
+
+
+
+
+.center {
+  position:absolute;
+  display: block;
+  z-index:9;
+  left:0;
+  right:0;
+  margin:40px auto 0px auto;
+}
+
+
+
+
+
+
+
+
+
+.prgrg{padding:4vh; font-family: 'Conv_ApexNew-Book'; font-size:13px; text-align:left; color:#fff; line-height:16px; width:100%;}
+
+.prgrg-bslk{font-size:15px; margin:0px; padding:0px; color:#fff; font-family: 'Conv_ApexNew-Book'; }
+
+.mac-bud{width:55%; float:left; margin-top:2%; margin-left:3%;}
+
+
+.mac-bud-number {
+  margin: 1% 24%;
+    margin-left: 25%;
+    margin-right: 0;
+  z-index: 55;
+  float:left;
+}
+.mac-bud-number li {
+  display: inline-block;
+  margin: 0px 0px;
+  z-index: 56;
+  vertical-align: top;
+}
+.mac-bud-number li .infinity img {
+  padding: 0px;
+}
+.mac-bud-number li .number {
+  margin-bottom: 0px;
+  display: block;
+  color: #fff;
+  font-size: 17px;
+  text-align: left;
+  font-family: 'Conv_ApexNew-Medium';
+  width:85px;
+}
+
+.yil{display:block; margin-top: 5px; margin-left: 5%; font-size: 13px; font-family: 'Conv_ApexNew-Light'; color:#ffF;}
+
+.name-text{ margin-left:25%; margin-top:4%; display:block; color:#fff; font-size:13px;}
+
+
+.box{width:30%; height:15%; float:left;  margin-top:-4%; margin-left:5%; text-align:left; }
+
+.name-text-bslk{margin-left:25%; display:block; color:#fff; font-family: 'Conv_ApexNew-Medium'; font-size:18px; margin-top:2%; line-height:20px;}
+
+.ozl_ic{display:none;}
+
+
+
+.scroll{width:100%; height:100%; overflow-y:scroll;}
+.scroll::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+.scroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0.3);
+}
+ 
+.scroll::-webkit-scrollbar-thumb {
+  background-color:rgba(255,255,255,0.3);
+  outline: 1px solid #ccc;
+}
+
+
+.tablo{padding:20px; width:90%; padding-left:30px;}
+
+.tbl-tick{float:right; font-size:11px; color:#fff; margin-bottom:20px;}
+
+.tbl-title{width:100%; height:25px; background-color:rgba(255,255,255,0.8); text-align:center; color:#68a873; line-height:25px; font-size:13px; font-family: 'Conv_ApexNew-Book';}
+
+.yıllar{background:rgba(255,255,255,0.3); height:25px; line-height:25px; color:#fff; font-family: 'Conv_ApexNew-Book';}
+.yıllar ul{float:right;}
+.yıllar ul li{float:left; display:block; width:60px; border-left:1px solid #fff; font-size:12px;}
+
+.tbl-left-bslk{color:#fff; padding-left:20px; font-family: 'Conv_ApexNew-Book'; font-size:12px;}
+.rkm{width:60px; color:#fff; font-size:12px; font-family: 'Conv_ApexNew-Book'; text-align:center; border-left:1px solid #fff;}
+.tr{height:25px; line-height:25px; border-bottom:1px solid #fff;}
+
+.box-yazi{float:left; width:170px;}
+.icerde{width:700px;}
+.faaliyet{ float:left; font-size:22px; color:#68a873; display:block; margin-top:30px; text-align:left;}
+
+.internal-concept {
+width:200px;
+  margin: 0 auto;
+}
+
+.break-content {
+  height: 10px;
+}
+
+.chart-area {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.pie-chart-text-wrapper {
+  width: 160px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  margin-left: -80px;
+}
+.pie-chart-text-wrapper .pie-chart-text {
+  position: relative;
+  display: block;
+  text-align: center;
+}
+.pie-chart-text-wrapper .pie-chart-text span {
+  font-size: 20px;
+  line-height: 26px;
+  color: #808080;
+}
+.pie-chart-text-wrapper .pie-chart-text span.big {
+  font-size: 35px;
+}
+
+.chart-data-legend {
+  color: #787d82;
+  font-weight: normal;
+}
+.highcharts-background{margin-top:-100px;}
+.highcharts-container{float:left; margin-top:-87px; }
+
+
+.profil{float:left; width:180px; margin-left:40px;}
+.box-yazi-two{float:left; color:#fff; text-align:left; margin:20px; margin-top:50px;}
+
+.hbr-box{width:100%; color:#fff; font-family: 'Conv_ApexNew-Book'; font-size:13px; height:40px; line-height:40px; text-align:left; transition: all 0.3s ease;}
+.hbr-bslk{width:50%; float:left;}
+.hbr-bslk a{ text-decoration:none; color:#fff; font-family: 'Conv_ApexNew-Book'; padding-left:40px;}
+.hbr-grsl{width:50%; float:left;  cursor:pointer;}
+.hbr-grsl img{width:100%; min-width:350px; }
+.hbr-box:hover{opacity:0.6;}
+
+.hbr-prg{width:60%; color:#fff; font-size:13px; text-align:left; font-family: 'Conv_ApexNew-Book'; height:300px; float:left;}
+
+.hbr-byk-grsl{width:40%; float:left;}
+.hbr-byk-grsl img{width:220px; min-width:220px; margin-top:60px;}
+
+.sol-alan{width:40%; float:left;}
+.sol-alan a{text-decoration:none; color:#fff;}
+
+.sag-alan{width:60%; float:left; font-family: 'Conv_ApexNew-Book';}
+
+#contact {
+  overflow: auto;
+  margin-left:61px;
+}
+#contact #form {
+  float:left;
+  margin-top:26px;
+}
+
+#contact #form span {
+  display:block;
+  float:left;
+  width:100px;
+  padding-top:5px;
+  color:#fff;
+  font-size:13px;
+
+}
+#contact #form input {
+  float:left;
+  width:200px;
+  border:0px;
+  color:#000;
+  padding:7px 7px 7px 7px;
+  margin-bottom:10px;
+}
+#contact #form textarea {
+  float:left;
+  border:0px;
+  width:200px;
+  height:90px;
+  padding:10px 10px 10px 30px;
+  color:#000;
+  resize: none;
+}
+#contact #form input.name {
+  background:#fff;
+}
+#contact #form input.email {
+  background:#fff;
+}
+#contact #form input.captcha {
+  background:#fff;
+}
+#contact #form textarea.message {
+  background:#fff;
+}
+#contact #form input.submit {
+  cursor: pointer;
+  float:right;
+  margin:10px 16px 0px 0px;
+	background:#68a873;	
+  color:fff;
+
+}
+#contact #captcha span{
+  width: 44px;
+}
+#contact #captcha input{
+  background: url(http://img3.uploadhouse.com/fileuploads/17737/17737011310213e71805ecf2292144cbbecf42ad.png) no-repeat scroll 0 0 transparent;
+  margin: 5px 0 0;
+  padding: 0;
+  border: medium none;
+  cursor: pointer;
+  width: 15px;
+}
+
+
+.il-box{
+	float:left;
+	margin-top:20px;
+
+	font-family: 'Conv_ApexNew-Book';
+	text-align:left;
+	color:#fff;
+	font-size:12px;
+	display:block;
+	}
+.il-box p{
+	display:block;
+	margin-top:10px;
+	line-height:20px;
+	}
+	
+.c-z{margin:0px; float:left; margin-top:10px; }
+
+
+.giris-dil{position:absolute; top:50%; left:0px; right:0px; bottom:0px; margin:auto; width:343px;}
+.menu-dil a{float:left;padding-left:15px; color:#575757; text-decoration:none; border-right:1px solid #575757; display:block; width:70px;}
